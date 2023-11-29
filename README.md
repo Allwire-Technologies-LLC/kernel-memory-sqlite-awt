@@ -1,4 +1,4 @@
-# Kernel Memory with Postgres
+# Kernel Memory with Sqlite
 
 [![License: MIT](https://img.shields.io/github/license/microsoft/kernel-memory)](https://github.com/microsoft/kernel-memory/blob/main/LICENSE)
 [![Discord](https://img.shields.io/discord/1063152441819942922?label=Discord&logo=discord&logoColor=white&color=d82679)](https://aka.ms/SKDiscord)
@@ -7,4 +7,4 @@
 is an open-source service and plugin specialized in the efficient indexing of datasets
 through custom continuous data hybrid pipelines.
 
-This repository contains the Postgres adapter allowing to use Kernel Memory with Postgres.
+This repository contains the Sqlite adapter allowing to use Kernel Memory with Postgres.
