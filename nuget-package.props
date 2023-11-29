@@ -14,8 +14,8 @@
         <!-- Required license, copyright, and repo information. Packages can override. -->
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <Copyright>© Allwire Technologies. All rights reserved.</Copyright>
-        <PackageProjectUrl>https://github.com/voxscript/awt-kernel-memory-postgres</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/voxscript/awt-kernel-memory-postgres</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/Allwire-Technologies-LLC/kernel-memory-sqlite-awt</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Allwire-Technologies-LLC/kernel-memory-sqlite-awt</RepositoryUrl>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
 
         <!-- Use icon and NUGET readme from dotnet/nuget folder -->

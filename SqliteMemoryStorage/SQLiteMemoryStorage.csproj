@@ -3,8 +3,8 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <RollForward>LatestMajor</RollForward>
-        <AssemblyName>AWT.KernelMemory.Sqlite</AssemblyName>
-        <RootNamespace>AWT.KernelMemory.Sqlite</RootNamespace>
+        <AssemblyName>KernelMemory.SQLite.AWT</AssemblyName>
+        <RootNamespace>AWT.KernelMemory.SQLite</RootNamespace>
         <IsPackable>true</IsPackable>
         <PackageId>Microsoft.KernelMemory.Postgres</PackageId>
         <NoWarn>CA1724,NU5104</NoWarn>

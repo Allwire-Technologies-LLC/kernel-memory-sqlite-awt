@@ -11,7 +11,7 @@
 
     <ItemGroup>
         <!-- This packages is built locally for demo purpose, see nuget.config -->
-        <PackageReference Include="AWT.KernelMemory.Sqlite" Version="0.1.0"/>
+        <PackageReference Include="AWT.KernelMemory.SQLite" Version="0.1.0"/>
     </ItemGroup>
 
     <ItemGroup>
