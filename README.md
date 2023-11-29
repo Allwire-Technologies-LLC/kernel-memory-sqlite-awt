@@ -7,4 +7,4 @@
 is an open-source service and plugin specialized in the efficient indexing of datasets
 through custom continuous data hybrid pipelines.
 
-This repository contains the Sqlite adapter allowing to use Kernel Memory with Postgres.
+This repository contains the Sqlite adapter allowing to use Kernel Memory with SQLite.
