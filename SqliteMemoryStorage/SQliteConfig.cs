@@ -8,7 +8,7 @@ namespace AWT.KernelMemory.SQLite;
 public class SQLiteConfig
 {
     /// <summary>
-    /// Connection string required to connect to Postgres
+    /// Connection string required to connect to SQLite
     /// </summary>
     public string ConnString { get; set; } = string.Empty;
 }
