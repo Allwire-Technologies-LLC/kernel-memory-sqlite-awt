@@ -1,0 +1,53 @@
+﻿<Project>
+    <PropertyGroup>
+        <!-- Central version prefix - applies to all nuget packages. -->
+        <Version>0.1.0</Version>
+
+        <!-- Default description and tags. Packages can override. -->
+        <Authors>Voxscript, Allwire Technogies</Authors>
+        <Company>Allwire Technologies</Company>
+        <Product>Kernel Memory adapter for SQLite</Product>
+        <Description>SQLite connector for Microsoft Kernel Memory, to store and search memory using SQLite vector indexing and SQLite features.</Description>
+        <PackageTags>Copilot, Memory, RAG, Kernel Memory, SQLite, AI, Artificial Intelligence, Embeddings, Vector DB, Vector Search, ETL</PackageTags>
+        <PackageId>$(AssemblyName)</PackageId>
+
+        <!-- Required license, copyright, and repo information. Packages can override. -->
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Copyright>© Allwire Technologies. All rights reserved.</Copyright>
+        <PackageProjectUrl>https://github.com/voxscript/awt-kernel-memory-postgres</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/voxscript/awt-kernel-memory-postgres</RepositoryUrl>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+
+        <!-- Use icon and NUGET readme from dotnet/nuget folder -->
+        <PackageIcon>icon.png</PackageIcon>
+        <PackageIconUrl>icon.png</PackageIconUrl>
+        <PackageReadmeFile>NUGET.md</PackageReadmeFile>
+
+        <!-- Build symbol package (.snupkg) to distribute the PDB containing Source Link -->
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+        <!-- Include the XML documentation file in the NuGet package. -->
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- SourceLink allows step-through debugging for source hosted on GitHub. -->
+        <!-- https://github.com/dotnet/sourcelink -->
+        <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <!-- Include icon.png and NUGET.md in the project. -->
+        <None Include="$(RepoRoot)/icon.png" Link="icon.png" Pack="true" PackagePath="." Visible="false"/>
+        <None Include="$(RepoRoot)/NUGET.md" Link="NUGET.md" Pack="true" PackagePath="." Visible="false"/>
+    </ItemGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+</Project>
